@@ -194,6 +194,9 @@ main {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
+
+    position: relative;
+    z-index: 2;
 }
 
 .projects-section {
@@ -304,6 +307,20 @@ background-repeat: no-repeat;
     width: 20vw;
     padding-left: 5%;
     /* padding-right: 5%; */
+}
+
+.backbutton {
+    font-family: "new-order", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+
+align-self: flex-end;
+
+    margin-left: 10%;
+    margin-bottom: 2%;
 }
 
 #display1 {
@@ -439,4 +456,22 @@ border-top: white 1px solid;
     width: auto;
 
     
+}
+
+#banner {
+    width: auto;
+    height: 600px;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    z-index: 0;
+}
+
+#footerimg {
+    width: auto;
+    height: 65%;
+    position: fixed; /* Use fixed instead of sticky for bottom right corner */
+    bottom: 0;
+    right: 0; /* Changed from right: 50% to right: 0 */
+    z-index: 0;
 }
