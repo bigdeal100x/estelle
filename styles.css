@@ -5,6 +5,7 @@ body {
     background-color: black;
     color: white;
     /* overflow-x: hidden; */
+
 }
 
 nav {
@@ -17,6 +18,8 @@ nav {
     margin-left: 10%;
     margin-right: 10%;
     width: auto;
+
+    position: relative;
 }
 
 .titlenavbig {
@@ -83,6 +86,7 @@ main {
     display: flex;
     flex-direction: row;
 
+    position: relative;
 }
 
 #mininav {

@@ -129,8 +129,9 @@ font-weight: 400;
 font-style: normal;
     font-size: .9em;
     margin: 0;
-    color: red;
+    color: #999999;
     padding-left: 5%;
+    white-space: normal;
 }
 
 nav a {
@@ -205,27 +206,52 @@ display: grid;
 
 }
 
+/* For interactive.html (vertical layout) */
 .project-entries {
     display: flex;
     flex-direction: row;
-
-margin-left: 12.5%;
-margin-top: 2.5%;
+    margin-left: 12.5%;
+    margin-top: 2.5%;
 }
 
 .project-entries a {
     text-decoration: none;
-width: 21%;
+    width: 21%; /* Percentage-based for responsive design */
 }
 
+/* For digital.html (horizontal scroll) */
+.project-entries-digital {
+    display: flex;
+    flex-direction: row;
+    margin-left: 12.5%;
+    margin-top: 2.5%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.project-entries-digital::-webkit-scrollbar {
+  display: none;
+}
+
+.project-entries-digital a {
+    text-decoration: none;
+    flex-shrink: 0; /* This is key! */
+    width: 300px; /* Fixed width */
+}
+
+/* Project entry styling - works for both */
 .project-entry {
     border-left: white 1px solid;
-
     height: 50vh;
-
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* .project-entry img {
     margin-top: 25%;
