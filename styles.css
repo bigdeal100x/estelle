@@ -6,7 +6,9 @@ body {
     color: white;
     /* overflow-x: hidden; */
 
+    
 }
+
 
 nav {
     display: flex;
@@ -19,7 +21,7 @@ nav {
     margin-right: 10%;
     width: auto;
 
-    position: relative;
+    
 }
 
 .titlenavbig {
@@ -119,6 +121,7 @@ main {
     text-decoration: none;
 }
 
+
 #mininav a:visited {
     color: white;
     text-decoration: none;
@@ -129,6 +132,7 @@ main {
     text-decoration: none;
 }
 
+
 #socials {
     width: 5%;
     border-left: white 2px solid;
@@ -138,7 +142,7 @@ main {
 }
 
 #socials div:hover {
-    background-color: red;
+    background-color: #999999;
 }
 
 #socials div {
