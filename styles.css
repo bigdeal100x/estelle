@@ -137,6 +137,10 @@ main {
     justify-content: flex-end;
 }
 
+#socials div:hover {
+    background-color: red;
+}
+
 #socials div {
     border-top: white 2px solid;
     height: 13%;
