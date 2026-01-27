@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: black;
     color: white;
-    /* overflow: hidden; */
 }
 
 body {
@@ -229,6 +228,47 @@ margin-top: 5%;
 
 #contactinfo h2 {
     color: white;
+}
+
+#socials {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 10%;
+}
+
+#socials div {
+    display: flex;
+    flex-direction: row;
+
+    margin: 1%;
+}
+
+#socials h4 {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.socialbutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 5%;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.socialbutton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socialbutton img {
+    width: 25px; /* Adjust size as needed */
+    height: 25px;
 }
 
 #contactform {
