@@ -82,13 +82,11 @@ nav {
     background-color: red;
 }
 
-
-
 #banner {
     width: auto;
-    height: 700px;
+    height: 70vh;
     position: absolute;
-    bottom: 0;
+    bottom: 7%;
     left: 0;
     z-index: 3;
 }
@@ -351,7 +349,7 @@ nav p {
 
 #footerimg {
     width: auto;
-    height: 65%;
+    height: 55vh;
     position: absolute;
     bottom: 0;
     right: 0;
