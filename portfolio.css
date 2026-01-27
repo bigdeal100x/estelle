@@ -300,7 +300,9 @@ background-repeat: no-repeat;
 }
 
 #pic1:hover {
-    background-image: url("images/inter5.jpg"); 
+    /* background-image: url("images/inter5.jpg");  */
+
+    border-left: red 10px solid;
 
 }
 
@@ -312,7 +314,9 @@ background-repeat: no-repeat;
 }
 
 #pic2:hover {
-    background-image: url("images/inter3.jpg");
+    /* background-image: url("images/inter3.jpg"); */
+
+    border-left: red 10px solid;
 }
 
 #pic3 {
@@ -323,7 +327,9 @@ background-repeat: no-repeat;
 }
 
 #pic3:hover {
-    background-image: url("images/inter6.jpg");
+    /* background-image: url("images/inter6.jpg"); */
+
+    border-left: red 10px solid;
 }
 
 #pic4 {
@@ -334,7 +340,9 @@ background-repeat: no-repeat;
 }
 
 #pic4:hover {
-    background-image: url("images/inter9.jpg");
+    /* background-image: url("images/inter9.jpg"); */
+
+    border-left: red 10px solid;
 }
 
 #pic5 {
