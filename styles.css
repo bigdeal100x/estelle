@@ -292,4 +292,10 @@ nav p {
     bottom: 0;
     right: 0;
     z-index: 3;
+
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;  
+  pointer-events: none; 
+  user-drag: none;
 }
