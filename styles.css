@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: black;
     color: white;
-    overflow-x: hidden;
+    overflow: hidden;
 
     
 }
@@ -110,29 +110,7 @@ main {
     position: relative;
 }
 
-#mininav {
-    padding-top: 1%;
-    padding-right: 1%;
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
 
-    font-family: "aglet-mono";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-}
-
-#mininav a {
-    margin-bottom: 12%;
-    border-bottom: white 1px solid;
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    text-align: right;
-}
 
 #mininav a:hover {
     background-color: red;
@@ -151,6 +129,75 @@ main {
     text-decoration: none;
 }
 
+#mininav {
+    padding-top: 1%;
+    padding-right: 1%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+
+    font-family: "aglet-mono";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+
+    position: relative;
+    min-height: 300px; /* Ensure enough height for descriptions */
+}
+
+#mininav a {
+    margin-bottom: 12%;
+    border-bottom: white 1px solid;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: right;
+}
+
+/* Style for all description paragraphs */
+#mininav p {
+    position: absolute;
+    bottom: 0;
+    right: 7%;
+    width: 100%;
+    text-align: right;
+    background-color: red;
+    color: white;
+    padding: 2%;
+    font-size: 1em;
+    
+    /* Hide by default */
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show description when corresponding link is hovered */
+#a-1:hover ~ #mininav-desc1,
+#mininav-desc1:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+#a-2:hover ~ #mininav-desc2,
+#mininav-desc2:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+#a-3:hover ~ #mininav-desc3,
+#mininav-desc3:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* You might want to remove these old styles if they exist */
+#mininav-desc1,
+#mininav-desc2,
+#mininav-desc3 {
+    z-index: 10;
+}
 
 #socials {
     width: 5%;
