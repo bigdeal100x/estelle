@@ -794,7 +794,7 @@ border-top: white 1px solid;
 
 #footerimg {
     width: auto;
-    height: 65%;
+    height: 55vh;
     position: fixed; /* Use fixed instead of sticky for bottom right corner */
     bottom: 0;
     right: 0; /* Changed from right: 50% to right: 0 */
