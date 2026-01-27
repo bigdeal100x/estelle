@@ -12,6 +12,24 @@ body {
     overflow-y: hidden;
 } */
 
+#bgimg {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+      -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;  
+  pointer-events: none; 
+  user-drag: none;
+
+  opacity: .4;
+  scale: 1.5;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -22,6 +40,9 @@ nav {
     margin-left: 10%;
     margin-right: 10%;
     width: auto;
+
+    position: relative;
+    z-index: 1;
 }
 
 .titlenavbig {
