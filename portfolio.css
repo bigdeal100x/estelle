@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: black;
     color: white;
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -303,7 +303,6 @@ background-repeat: no-repeat;
     /* background-image: url("images/inter5.jpg");  */
 
     border-left: red 10px solid;
-
 }
 
 #pic2 {
