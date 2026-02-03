@@ -159,6 +159,21 @@ font-style: normal;
     white-space: normal;
 }
 
+h9 {
+    font-family: "aglet-mono", mono;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    margin: 0;
+    color: white;
+    padding-left: 5px;
+    width: 90%;
+}
+
+h9:hover {
+    background-color: red;
+}
+
 .projects-display h8 {
     white-space: pre;
 }
@@ -237,6 +252,7 @@ main {
 display: grid;
     grid-template-rows: repeat(2);
 
+    margin-bottom: 20%;
 }
 
 /* For interactive.html (vertical layout) */
@@ -459,7 +475,28 @@ background-repeat: no-repeat;
 
 }
 
+.projects-display2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .projects-display p {
+    font-family: "new-order", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    width: 20vw;
+    padding-left: 5%;
+    /* padding-right: 5%; */
+}
+
+.projects-display2 p {
     font-family: "new-order", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -486,6 +523,208 @@ background-repeat: no-repeat;
 
     border: white 2px solid;
 }
+
+.projects-container {
+    display: grid;
+    grid-template-areas:
+        "projects-menu1 projects-menu2 projects-menu3"
+        "projects-menu4 projects-description projects-photogrid";
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+    grid-template-rows: auto 1fr; /* Fixed the typo and added proper rows */
+
+    margin-top: 5vh;
+    margin-left: 10.5vw;
+
+    position: relative;
+    z-index: 1;
+}
+
+.top-split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+    width: 100%;
+
+    margin-top: 7vh;
+}
+
+.top-split h2 {
+    margin: 0;
+    padding-left: 2.5%;
+
+    height: max-content;
+}
+
+.top-split a {
+    padding: 1%;
+}
+
+/* Target the actual grid container divs */
+.projects-menu1 {
+    grid-area: projects-menu1;
+}
+
+.projects-menu2 {
+    grid-area: projects-menu2;
+}
+
+.projects-menu3 {
+    grid-area: projects-menu3;
+}
+
+/* Make the menu containers take full width of their grid cells */
+.projects-menu1, .projects-menu2, .projects-menu3 {
+    display: flex;
+    width: 100%;
+}
+
+/* Now style the h2 elements to fill their containers */
+.projects-menu1 h2, .projects-menu2 h2, .projects-menu3 h2 {
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    padding: 2px 0 2px 5px; /* Simplified padding */
+    width: 100%; /* This should now work correctly */
+    margin: 0;
+    box-sizing: border-box; /* This ensures padding is included in width calculation */
+}
+
+.projects-menu4 {
+    grid-area: projects-menu4;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+
+    height: 80vh;
+}
+
+.projects-menu4 a {
+margin-top: 140%;
+margin-left: 0%;
+
+padding: 3%;
+
+    justify-self: start;
+    align-self: start;
+}
+
+.projects-description h2 {
+    font-size: 1.5em;
+}
+
+
+.projects-description {
+    grid-area: projects-description;
+}
+
+.projects-description p {
+    padding-left: 0;
+    width: 90%;
+}
+
+.projects-photogrid {
+    grid-area: projects-photogrid;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.scrollbar {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-left: 2.5%;
+}
+
+.up {
+    background-image: url(images/up.png);
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: white 1px solid;
+    width: 25px;
+    height: 25px;
+}
+
+.down {
+    background-image: url(images/down.png);
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: white 1px solid;
+    width: 25px;
+    height: 25px;
+}
+
+.projects-photogrid img {
+    width: 100%;
+}
+
+.projects-photogrid video {
+    width: 100%;
+    height: auto;
+}
+
+.projects-photogrid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.projects-photogrid::-webkit-scrollbar-track {
+    background: black;
+}
+
+.projects-photogrid::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 4px;
+}
+
+.projects-photogrid::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+/* For Firefox */
+.projects-photogrid {
+    scrollbar-width: thin;
+    scrollbar-color: white black;
+}
+
+#photogrid1 {
+    height: 12%; /* Slightly less than full viewport height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Optional: adds space between images */
+
+}
+
+#photogrid2 {
+    height: 12%; /* Slightly less than full viewport height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Optional: adds space between images */
+
+}
+
+#matteduck4 {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
 
 #display1 {
     height: 100vh;
@@ -553,6 +792,13 @@ background-repeat: no-repeat;
 #display13 {
     height: 100vh;
     flex-wrap: wrap;
+}
+
+#display14 {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #video1 {
