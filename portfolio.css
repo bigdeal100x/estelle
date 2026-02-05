@@ -801,6 +801,28 @@ padding: 3%;
     flex-direction: column;
 }
 
+#display15 {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#display16 {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#display17 {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
 #video1 {
     height: 60vh;
     width: auto;
