@@ -822,6 +822,13 @@ padding: 3%;
     flex-direction: column;
 }
 
+#display18 {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
 
 #video1 {
     height: 60vh;
@@ -983,6 +990,17 @@ border-top: white 1px solid;
 #photodiv3 img {
     height: 20vh;
     width: auto;    
+}
+
+#photodiv5 {
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+
+}
+
+#ecu-ui {
+    height: 60vh;
+    width: auto;
 }
 
 #figma1 {
